@@ -5,7 +5,9 @@
 		<div class="list-auto twelve-col">
 			<ul class="inline-logos no-bullets">
 				{% for partner in programme_partners %}
-					<li{% if forloop.last %} class='last-item'{% endif %}><img src="{{ partner.logo }}" alt="{{ partner.name }}" /></li>
+					<li class="inline-logos__item">
+						<img src="{{ partner.logo }}" alt="{{ partner.name }}" class="inline-logos__image" />
+					</li>
 				{% endfor %}
 			</ul>
 		</div>
